@@ -1,0 +1,63 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.wide {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.long {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+#grid-one {
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position-x: right 15%;
+    background-position-y: top;
+    background-color: $violet;
+    opacity: 90%;
+}
+
+#grid-two {
+    background-color: $dark-grayish-blue;
+}
+
+#grid-three,
+#grid-four {
+    background-color: $white;
+}
+
+#grid-five {
+    background-color: $dark-blackish-blue;
+}
+
+@media screen and (max-width: 375px) {
+    #grid-one {
+        flex: 1 1 30%;
+    }
+    #grid-two {
+        flex: 1 1 10%;
+    }
+    #grid-three {
+        flex: 1 1 10%;
+        order: 5;
+    }
+    #grid-four {
+        flex: 1 1 30%;
+    }
+    #grid-five {
+        flex: 1 1 30%;
+    }
+}

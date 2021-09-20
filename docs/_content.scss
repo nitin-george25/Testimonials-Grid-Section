@@ -1,0 +1,39 @@
+.header {
+    flex: 10%;
+    display: flex;
+    align-items: center;
+    * {
+        margin: 0;
+    }
+    .fixed {
+        flex: 2;
+    }
+    .title {
+        font-size: 11px;
+        opacity: 50%;
+    }
+    img {
+        flex: 1s;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        margin-right: 1rem;
+    }
+}
+
+.light {
+    color: $lgb-font-color;
+}
+
+.testimony {
+    flex: 40%;
+    margin-top: 1rem;
+    font-size: $large-font-size;
+}
+
+.experience {
+    flex: 50%;
+    opacity: 70%;
+    font-size: 12px;
+    margin: 1rem 0;
+}

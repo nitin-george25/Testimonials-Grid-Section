@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'cards';
+@import 'content';
+html * {
+    font-size: $main-font-size;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: $light-grayish-blue;
+    font-family: $font;
+}
+
+.container {
+    flex: 1 1 90%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+@media screen and (max-width: 375px) {
+    html * {
+        font-size: 10px;
+    }
+    body {
+        height: 100%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
